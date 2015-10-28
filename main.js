@@ -28,8 +28,6 @@ $(document).ready(function(){
     var beerHTML = Mustache.render(beerTemplate, beerPull);
     $("#beerProducts").html(beerHTML);
 
-
-
     var entreesItem = menu.entrees.map(function(obj){
     return{
         name:obj.item,
