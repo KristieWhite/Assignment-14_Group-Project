@@ -28,26 +28,20 @@ $(document).ready(function(){
     var beerHTML = Mustache.render(beerTemplate, beerPull);
     $("#beerProducts").html(beerHTML);
 
-    var entreesItem = menu.entrees.map(function(obj){
-    return{
-        name:obj.item,
-        price: obj.price,
-        description: obj.description,
-        allergies: obj.allergies,
-        favorite:obj.favorite,
-        spicy:obj.spicy,
-        vegan:obj.vegan
+    var entreeItem = menu.entrees.map(function(obj) {
+        return {
+            name: obj.item,
+            price: obj.price,
+            description: obj.description
+        };
+    });
 
+    var entreePull = { "entreeItem": entreeItem};
 
-    };
-});
-    var entreesPull= {
-        "entreesItem":entreesItem
-    };
+    var entreeTemplate = $("#entreeTemplate").text();
+    var entreeHTML = Mustache.render(entreeTemplate, entreePull);
+    $("#entreeProducts").html(entreeHTML);
 
-    var entreesTemplate = $("entreesTemplate").text();
-    var entreesHTML = Mustache.render(entreesTemplate, entreesPull);
-    $("#entreesProducts").html(entreesHTML);
 
 
 

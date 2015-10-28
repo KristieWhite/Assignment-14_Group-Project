@@ -11,7 +11,7 @@
 
 <div id = "beerProducts"> </div>
 
-<div id = "entreesProducts"> </div>
+<div id = "entreeProducts"> </div>
 
 
 
@@ -35,21 +35,17 @@
 </script>
 
 
-<script type = "x-tmpl-mustache" id = "entreesTemplate">
-  <ul id = "entreesList">
-    {{#entreesItem}}
+<script type = "x-tmpl-mustache" id = "entreeTemplate">
+  <ul id = "entreeList">
+    {{#entreeItem}}
     <div>
       <li>{{name}}</li>
-        <li>${{price}}</li>
-       <li>{{description}}</li>
+      <li>{{price}}</li>
+      <li>{{description}}</li>
     </div>
-    {{/entreesItem}}
-  </ul>
+    {{/entreeItem}}
+    </ul>
 </script>
-
-
-
-
 
 
 
