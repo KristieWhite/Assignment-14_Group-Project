@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Group Project</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+</head>
+<body>
+
+
+<div id = "beerProducts"> <!-- DON'T FORGET!! We still need to add bottle draught and allergies--></div>
+
+<div id = "entreesProducts"> </div>
+ <!--Dont forget we still need favorites, allergies , spicy, and vegan-->
+
+
+
+
+
+
+
+<script type = "x-tmpl-mustache" id = "beerTemplate">
+  <ul id = "beerList">
+    {{#beerItem}}
+    <div>
+      <li>{{name}}</li>
+        <li>{{style}}</li>
+        <li>${{price}}</li>
+       <li>ABV:{{content}}</li>
+       <li>{{description}}</li>
+    </div>
+    {{/beerItem}}
+  </ul>
+</script>
+
+
+<script type = "x-tmpl-mustache" id = "entreesTemplate">
+  <ul id = "entreesList">
+    {{#entreesItem}}
+    <div>
+      <li>{{name}}</li>
+        <li>${{price}}</li>
+       <li>{{description}}</li>
+    </div>
+    {{/entreesItem}}
+  </ul>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.js">
+</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
