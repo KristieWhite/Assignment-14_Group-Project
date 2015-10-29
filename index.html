@@ -16,6 +16,9 @@
 
 <div id = "gamesProducts"></div>
 
+<div id = "specialProducts"> </div>
+
+
 <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJy6FEsprDyIARuQKsh8g7_B8&key=AIzaSyAFytpJMSTNookNXGWAGg8kSk7mDHSwKe8" allowfullscreen></iframe>
 
 
@@ -37,9 +40,23 @@
     <div>
       <li>{{name}}</li>
         <li>{{style}}</li>
+        <li>{{description}}</li>
+        <li>ABV:{{content}}</li>
+            {{#bottle}}
+        <li>Bottled</li>
+            {{/bottle}}
+            {{#draught}}
+        <li>On Draft</li>
+            {{/draught}}
+            {{#allergies}}
+        <li>allergies</li>
+            {{/allergies}}
         <li>${{price}}</li>
-       <li>ABV:{{content}}</li>
-       <li>{{description}}</li>
+            {{#favorite}}
+        <li>Voted Best</li>
+            {{/favorite}}
+
+
     </div>
     {{/beerItem}}
   </ul>
@@ -53,9 +70,27 @@
       <li>{{name}}</li>
       <li>{{price}}</li>
       <li>{{description}}</li>
+          {{#spicy}}
+        <li>spicy icon</li>
+          {{/spicy}}
+          {{^spicy}}
+        <li>spice upon request</li>
+          {{/spicy}}
+          {{#vegan}}
+        <li>Voted Best</li>
+          {{/vegan}}
+          {{#favorite}}
+        <li>Voted Best</li>
+          {{/favorite}}
     </div>
     {{/entreeItem}}
     </ul>
+</script>
+
+<script type = "x-tmpl-mustache" id = "specialTemplate">
+{{#specialItem}}
+  <p>Special {{menu_item_id}}: Two Entrees, Two Beers & a Game for $25.</p>
+{{/specialItem}}
 </script>
 
 <script type = "x-tmpl-mustache" id = "gamesTemplate">

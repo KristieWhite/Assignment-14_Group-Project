@@ -32,7 +32,10 @@ $(document).ready(function(){
         return {
             name: obj.item,
             price: obj.price,
-            description: obj.description
+            description: obj.description,
+            vegan: obj.vegan,
+            spicy: obj.spicy,
+            favorite: obj.favorite
         };
     });
 
@@ -81,21 +84,21 @@ $(document).ready(function(){
 
     });
 
+    var special = "https://json-data.herokuapp.com/restaurant/special/1";
 
+    $.ajax({
+        url: special,
+        method: 'get',
+        dataType: 'json'
+    }).then(function(specialItem){
+        var specialPull = {
+            'specialItem': specialItem
+        };
+        var specialTemplate = $("#specialTemplate").text();
+        var specialHTML = Mustache.render(specialTemplate, specialPull);
+        $("#specialProducts").html(specialHTML);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    });
 });
 
 
