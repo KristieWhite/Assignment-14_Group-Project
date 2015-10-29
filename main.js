@@ -61,7 +61,41 @@ $(document).ready(function(){
     $("#gamesProducts").html(gamesHTML);
 
 
+    }); //this is where the first ajax ends
+
+    var news = 'https://json-data.herokuapp.com/restaurant/news/1';
+
+    $.ajax({
+        url: news,
+        method: 'get',
+        dataType: 'json'
+    }).then(function(newsItem) {
+
+        var newsPull = {'newsItem': newsItem};
+
+        var newsTemplate = $("#newsTemplate").text();
+
+        var newsHTML = Mustache.render(newsTemplate, newsPull);
+
+        $("#newsProducts").html(newsHTML);
+
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
 
