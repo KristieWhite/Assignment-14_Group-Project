@@ -1,11 +1,52 @@
-#newsProducts {
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Nunito', sans-serif, arial;
+}
+
+.firstContainer {
+  display: inline-block;
   border: solid 1px black;
+  width: 100%;
+
+}
+
+#newsProducts {
+  display: inline-block;
+  border: solid 2px #e0e0e0;
   width: 400px;
   height: 250px;
   overflow: auto;
+  margin: 50px;
+
 }
+
+iframe {
+  display: inline-block;
+  margin: 50px;
+
+}
+
 
 .header {
   border: 1px solid black;
-  height: 150px;
+  height: 200px;
+
+}
+
+.header h1 {
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  margin-top: -150px;
+
+}
+
+.header img {
+  height: 200px;
+  width: 100%;
+  overflow: auto;
+  background-image: center;
 }
