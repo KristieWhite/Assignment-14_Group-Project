@@ -12,6 +12,7 @@
 <div id = "beerProducts"> </div>
 
 <div id = "entreeProducts"> </div>
+<div id = "gamesProducts"></div>
 
 
 
@@ -45,6 +46,20 @@
     </div>
     {{/entreeItem}}
     </ul>
+</script>
+
+<script type = "x-tmpl-mustache" id = "gamesTemplate">
+<ul id ="gamesList">
+{{#gamesItem}}
+<div>
+<li>{{name}}</li>
+<li>{{price}}</li>
+<li>{{description}}</li>
+<li>{{rating}}</li>
+<li>{{platform}}</li>
+</div>
+{{/gamesItem}}
+</ul>
 </script>
 
 

@@ -44,6 +44,28 @@ $(document).ready(function(){
 
 
 
+    var gamesItem = menu.games.map(function(obj){
+        return{
+            name:obj.item,
+            price:obj.price,
+            description:obj.description,
+            rating:obj.rating,
+            platform:obj.platform
+        };
+    });
+
+    var gamesPull = { "gamesItem": gamesItem};
+
+    var gamesTemplate = $("#gamesTemplate").text();
+    var gamesHTML = Mustache.render(gamesTemplate,gamesPull);
+    $("#gamesProducts").html(gamesHTML);
+
 
     });
 });
+
+
+
+
+
+
