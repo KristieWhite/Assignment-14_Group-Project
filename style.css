@@ -1,0 +1,11 @@
+#newsProducts {
+  border: solid 1px black;
+  width: 400px;
+  height: 250px;
+  overflow: auto;
+}
+
+.header {
+  border: 1px solid black;
+  height: 150px;
+}

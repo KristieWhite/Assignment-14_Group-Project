@@ -7,20 +7,43 @@
   <link rel="stylesheet" type="text/css" href="normalize.css">
 </head>
 <body>
+
+<div class = "header"> </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div id = "newsProducts"> </div>
-<div class="menuTabs">
-<ul id="menu">
 
-<li id = "beerProducts"> Beer Menu </li>
+  <div class="menuTabs">
 
+    <ul id="menu">
 
-<li id = "entreeProducts"> Entree </li>
+      <li id = "beerProducts"> Beer Menu </li>
 
-<li id = "gamesProducts"> Games</li>
+      <li id = "entreeProducts"> Entree </li>
 
-<li id = "specialProducts"> Specials </li>
-</ul>
-</div>
+      <li id = "gamesProducts"> Games </li>
+
+      <li id = "specialProducts"> Specials </li>
+
+    </ul>
+
+  </div>
 
 <iframe width="400" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJy6FEsprDyIARuQKsh8g7_B8&key=AIzaSyAFytpJMSTNookNXGWAGg8kSk7mDHSwKe8" allowfullscreen></iframe>
 
@@ -28,7 +51,7 @@
 <script type="x-tmpl-mustache" id = "newsTemplate">
   <div>
     {{#newsItem}}
-      <h2> {{title}} </h2>
+      <h3> {{title}} </h3>
       <p> {{post}} </p>
     {{/newsItem}}
   </div>
