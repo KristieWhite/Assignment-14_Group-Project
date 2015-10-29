@@ -1,6 +1,14 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+  color: white;
+  font-size: 30px;
+}
+
 * {
   box-sizing: border-box;
 }
+
 
 h1 {
   font-family: 'Nunito', sans-serif, arial;
@@ -10,6 +18,7 @@ h1 {
   display: inline-block;
   border: solid 1px black;
   width: 100%;
+  border-style: none;
 
 }
 
@@ -19,19 +28,19 @@ h1 {
   width: 400px;
   height: 250px;
   overflow: auto;
-  margin: 50px;
+  margin-top: 50px;
+  margin-left: 150px;
 
 }
 
 iframe {
   display: inline-block;
-  margin: 50px;
-
+  margin-top: 50px;
+  margin-left: 150px;
 }
 
 
 .header {
-  border: 1px solid black;
   height: 200px;
 
 }
@@ -40,13 +49,26 @@ iframe {
   font-size: 100px;
   text-align: center;
   color: white;
-  margin-top: -150px;
+  position: absolute;
+  top: 25px;
+  left: 400px;
+
 
 }
 
 .header img {
   height: 200px;
-  width: 100%;
+  width: 90%;
+  margin-left: 60px;
   overflow: auto;
   background-image: center;
+  position: relative;
 }
+.header ul {
+  position: absolute;
+  top: 25px;
+  right: 75px;
+  list-style: none;
+}
+
+

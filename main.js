@@ -99,7 +99,10 @@ $(document).ready(function(){
         $("#specialProducts").html(specialHTML);
 
     });
+
 });
+
+
 
 
 
