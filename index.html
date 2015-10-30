@@ -30,108 +30,102 @@
 
 </div>
 
+<div class="menu">
+    <h3>Beer</h3>
+       <div class="dropDown">
+       <p id="beerProducts"> </p>
+       </div>
+    <h3>Entrees</h3>
+       <div class="dropDown">
+       <p id = "entreeProducts"></p>
+       </div>
+    <h3>Games</h3>
+       <div class="dropDown">
+       <p id = "gamesProducts"></p>
+       </div>
+   <h3>Specials</h3>
+       <div class="dropDown">
+       <p id = "specialProducts"></p>
+       </div>
+</div>
 
-  <div class="menuTabs">
 
-    <ul id="menu">
-
-      <li id = "beerProducts"> Beer Menu </li>
-
-      <li id = "entreeProducts"> Entree </li>
-
-      <li id = "gamesProducts"> Games </li>
-
-      <li id = "specialProducts"> Specials </li>
-
-    </ul>
-
-  </div>
 
 <script type="x-tmpl-mustache" id = "newsTemplate">
-  <div>
-    {{#newsItem}}
-      <h3> {{title}} </h3>
-      <p> {{post}} </p>
-    {{/newsItem}}
-  </div>
+ <div>
+   {{#newsItem}}
+     <h3> {{title}} </h3>
+     <p> {{post}} </p>
+   {{/newsItem}}
+ </div>
 </script>
-
 
 
 
 <script type = "x-tmpl-mustache" id = "beerTemplate">
-  <ul id = "beerList">
-    {{#beerItem}}
-    <div>
-      <li>{{name}}</li>
-        <li>{{style}}</li>
-        <li>{{description}}</li>
-        <li>ABV:{{content}}</li>
-            {{#bottle}}
-        <li>Bottled</li>
-            {{/bottle}}
-            {{#draught}}
-        <li>On Draft</li>
-            {{/draught}}
-            {{#allergies}}
-        <li>allergies</li>
-            {{/allergies}}
-        <li>${{price}}</li>
-            {{#favorite}}
-        <li>Voted Best</li>
-            {{/favorite}}
-
-
-    </div>
-    {{/beerItem}}
-  </ul>
+{{#beerItem}}
+ <p>
+     <li>{{name}}</li>
+       <li>{{style}}</li>
+       <li>{{description}}</li>
+       <li>ABV:{{content}}</li>
+           {{#bottle}}
+       <li>Bottled</li>
+           {{/bottle}}
+           {{#draught}}
+       <li>On Draft</li>
+           {{/draught}}
+           {{#allergies}}
+       <li>allergies</li>
+           {{/allergies}}
+       <li>${{price}}</li>
+           {{#favorite}}
+       <li>Voted Best</li>
+           {{/favorite}}
+   {{/beerItem}}
+ </p>
 </script>
 
 
 <script type = "x-tmpl-mustache" id = "entreeTemplate">
-  <ul id = "entreeList">
-    {{#entreeItem}}
-    <div>
-      <li>{{name}}</li>
-      <li>{{price}}</li>
-      <li>{{description}}</li>
-          {{#spicy}}
-        <li>spicy icon</li>
-          {{/spicy}}
-          {{^spicy}}
-        <li>spice upon request</li>
-          {{/spicy}}
-          {{#vegan}}
-        <li>Voted Best</li>
-          {{/vegan}}
-          {{#favorite}}
-        <li>Voted Best</li>
-          {{/favorite}}
-    </div>
-    {{/entreeItem}}
-    </ul>
+  {{#entreeItem}}
+ <p>
+     <li>{{name}}</li>
+     <li>{{price}}</li>
+     <li>{{description}}</li>
+         {{#spicy}}
+       <li>spicy icon</li>
+         {{/spicy}}
+         {{^spicy}}
+       <li>spice upon request</li>
+         {{/spicy}}
+         {{#vegan}}
+       <li>Voted Best</li>
+         {{/vegan}}
+         {{#favorite}}
+       <li>Voted Best</li>
+         {{/favorite}}
+   {{/entreeItem}}
+   </p>
 </script>
 
 <script type = "x-tmpl-mustache" id = "specialTemplate">
 {{#specialItem}}
-  <p>Special {{menu_item_id}}: Two Entrees, Two Beers & a Game for $25.</p>
+ <p>Special {{menu_item_id}}: Two Entrees, Two Beers & a Game for $25.</p>
 {{/specialItem}}
 </script>
 
 <script type = "x-tmpl-mustache" id = "gamesTemplate">
-<ul id ="gamesList">
 {{#gamesItem}}
-<div>
+<p>
 <li>{{name}}</li>
 <li>{{price}}</li>
 <li>{{description}}</li>
 <li>{{rating}}</li>
 <li>{{platform}}</li>
-</div>
 {{/gamesItem}}
-</ul>
+</p>
 </script>
-
 
 
 

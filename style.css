@@ -7,8 +7,8 @@
 
 * {
   box-sizing: border-box;
+  list-style: none;
 }
-
 
 h1 {
   font-family: 'Nunito', sans-serif, arial;
@@ -69,6 +69,25 @@ iframe {
   top: 25px;
   right: 75px;
   list-style: none;
+}
+
+.menu {
+   margin:1em 0
+}
+.menu h3 {
+   background:#559b6a ;
+   color:#fff;
+   cursor:pointer;
+   margin:0 0 1px 0;
+   padding:4px 10px
+}
+.menu h3.current {
+   background:#4289aa ;
+   cursor:default
+}
+.menu div.dropDown {
+   padding:5px 10px;
+   max-height: auto;
 }
 
 
