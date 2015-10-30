@@ -8,10 +8,13 @@
 * {
   box-sizing: border-box;
   list-style: none;
-}
+text-decoration: none;}
 
 h1 {
   font-family: 'Nunito', sans-serif, arial;
+}
+#container{
+  background-image: url("http://zamnar.com/data/uploads/20/330934-grey-background.jpg");
 }
 
 .firstContainer {
@@ -22,6 +25,8 @@ h1 {
 
 }
 
+
+
 #newsProducts {
   display: inline-block;
   border: solid 2px #e0e0e0;
@@ -30,6 +35,7 @@ h1 {
   overflow: auto;
   margin-top: 50px;
   margin-left: 150px;
+  background-color: white;
 
 }
 
@@ -50,7 +56,7 @@ iframe {
   text-align: center;
   color: white;
   position: absolute;
-  top: 25px;
+  top: -50px;
   left: 400px;
 
 
@@ -64,15 +70,20 @@ iframe {
   background-image: center;
   position: relative;
 }
-.header ul {
+.header ul{
   position: absolute;
-  top: 25px;
-  right: 75px;
+  top: 150px;
+  right: 605px;
   list-style: none;
 }
 
+.header ul li{float: left;
+padding-left:15px;}
+
 .menu {
-   margin:1em 0
+   margin-left:150px;
+   width: 955px;
+
 }
 .menu h3 {
    background:#559b6a ;
