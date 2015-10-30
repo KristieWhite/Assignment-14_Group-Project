@@ -12,8 +12,13 @@
 <div id="container" >
     <div class = "header">
       <img src="http://mahoneysatlantic.com/wp-content/uploads/Mahoneys_SD_181-e1390358534738-1000x400.jpg" >
+
   <h1> Iron Pints </h1>
- <ul>
+
+  <div class="blackBar1"></div>
+
+  <ul id="socialLinks">
+
   <li><a href="https://twitter.com/?lang=en" class="brandico-twitter-bird"> </a></li>
 
   <li><a href="https://instagram.com/" class="brandico-instagram" > </a></li>
@@ -33,25 +38,27 @@
 
 </div>
 
+<div class="blackBar2"></div>
+
 <div class="menu">
-    <h3>Beer</h3>
+    <h3>BEER</h3>
        <div class="dropDown">
        <p id="beerProducts"> </p>
        </div>
-    <h3>Entrees</h3>
+    <h3>ENTREES</h3>
        <div class="dropDown">
        <p id = "entreeProducts"></p>
        </div>
-    <h3>Games</h3>
+    <h3>GAMES</h3>
        <div class="dropDown">
        <p id = "gamesProducts"></p>
        </div>
-   <h3>Specials</h3>
+   <h3>SPECIALS</h3>
        <div class="dropDown">
        <p id = "specialProducts"></p>
        </div>
 </div>
-
+    <div id="filler"></div>
 
 </div>
 
@@ -64,6 +71,7 @@
    {{/newsItem}}
  </div>
 </script>
+
 
 
 
@@ -91,7 +99,6 @@
  </p>
 </script>
 
-
 <script type = "x-tmpl-mustache" id = "entreeTemplate">
   {{#entreeItem}}
  <p>
@@ -112,6 +119,7 @@
          {{/favorite}}
    {{/entreeItem}}
    </p>
+
 </script>
 
 <script type = "x-tmpl-mustache" id = "specialTemplate">
@@ -119,6 +127,7 @@
  <p>Special {{menu_item_id}}: Two Entrees, Two Beers & a Game for $25.</p>
 {{/specialItem}}
 </script>
+
 
 <script type = "x-tmpl-mustache" id = "gamesTemplate">
 {{#gamesItem}}
