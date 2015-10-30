@@ -20,8 +20,8 @@ h1 {
 }
 #socialLinks  li{
     float: right;
-    padding-left: 20px;
-     margin-top: 15px;
+    padding-left: 80px;
+    margin-top: 15px;
 }
 
 .blackBar1 {
@@ -36,9 +36,9 @@ h1 {
 
 
 .blackBar1 li {
-  padding-top: 1em;
-  font-size: 20px;
-  margin-left: 15px;
+  padding-top: .5em;
+  font-size: 30px;
+  margin-left: 180px;
   float: left;
 }
 .blackBar1 a {
@@ -70,22 +70,42 @@ h1 {
 #newsProducts {
   display: inline-block;
   border: solid 2px #e0e0e0;
+  border-radius: 5px;
   width: 500px;
   height: 250px;
   overflow: auto;
   background-color: white;
   padding: 1em;
-
+  box-shadow: 2px 2px 8px white;
+  background-color: rgba(227,227,227,0.63);
+  color: #121212;
 }
 #theSpecials {
   display: inline-block;
   border: solid 2px #e0e0e0;
+  border-radius: 5px;
   width: 500px;
   height: 250px;
   overflow: auto;
   background-color: white;
   padding: 1em;
-  margin-left: 2em;
+  margin-left: 7em;
+  background-color: rgba(227,227,227,0.63);
+  box-shadow: 2px 2px 8px white;
+}
+
+#aboutUs {
+  display: inline-block;
+  border: solid 2px #e0e0e0;
+  border-radius: 5px;
+  width: 500px;
+  height: 250px;
+  overflow: auto;
+  background-color: white;
+  padding: 1em;
+  margin-left: 7em;
+  background-color: rgba(227,227,227,0.63);
+  box-shadow: 2px 2px 8px white;
 }
 
 
