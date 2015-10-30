@@ -3,54 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <title>Group Project</title>
+
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<div id="container" >
+    <div class = "header">
+      <img src="http://mahoneysatlantic.com/wp-content/uploads/Mahoneys_SD_181-e1390358534738-1000x400.jpg" >
+  <h1> Iron Pints </h1>
+  <div class="blackBar1"></div>
+ <ul id="socialLinks">
+  <li><a href="https://twitter.com/?lang=en" class="brandico-twitter-bird"> </a></li>
+
+  <li><a href="https://instagram.com/" class="brandico-instagram" > </a></li>
+
+  <li><a href="https://www.facebook.com/" class="brandico-facebook"> </a></li>
+
+  <li><a href="https://plus.google.com/getstarted/getstarted?fww=1" class="brandico-googleplus-rect"> </a></li>
+</ul>
 
 
-<div id = "beerProducts"> </div>
+</div>
 
-<div id = "entreesProducts"> </div>
+<div class = "firstContainer">
+  <div id = "newsProducts"></div>
+
+  <iframe width="400" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJy6FEsprDyIARuQKsh8g7_B8&key=AIzaSyAFytpJMSTNookNXGWAGg8kSk7mDHSwKe8" allowfullscreen></iframe>
+
+</div>
+<div class="blackBar2"></div>
+
+<div class="menu">
+    <h3>BEER</h3>
+       <div class="dropDown">
+       <p id="beerProducts"> </p>
+       </div>
+    <h3>ENTREES</h3>
+       <div class="dropDown">
+       <p id = "entreeProducts"></p>
+       </div>
+    <h3>GAMES</h3>
+       <div class="dropDown">
+       <p id = "gamesProducts"></p>
+       </div>
+   <h3>SPECIALS</h3>
+       <div class="dropDown">
+       <p id = "specialProducts"></p>
+       </div>
+</div>
+    <div id="filler"></div>
+
+</div>
 
 
-
-
-
+<script type="x-tmpl-mustache" id = "newsTemplate">
+ <div>
+   {{#newsItem}}
+     <h3> {{title}} </h3>
+     <p> {{post}} </p>
+   {{/newsItem}}
+ </div>
+</script>
 
 
 
 <script type = "x-tmpl-mustache" id = "beerTemplate">
-  <ul id = "beerList">
-    {{#beerItem}}
-    <div>
-      <li>{{name}}</li>
-        <li>{{style}}</li>
-        <li>${{price}}</li>
+{{#beerItem}}
+ <p>
+     <li>{{name}}</li>
+       <li>{{style}}</li>
+       <li>{{description}}</li>
        <li>ABV:{{content}}</li>
-       <li>{{description}}</li>
-    </div>
-    {{/beerItem}}
-  </ul>
+           {{#bottle}}
+       <li>Bottled</li>
+           {{/bottle}}
+           {{#draught}}
+       <li>On Draft</li>
+           {{/draught}}
+           {{#allergies}}
+       <li>allergies</li>
+           {{/allergies}}
+       <li>${{price}}</li>
+           {{#favorite}}
+       <li>Voted Best</li>
+           {{/favorite}}
+   {{/beerItem}}
+ </p>
 </script>
 
 
-<script type = "x-tmpl-mustache" id = "entreesTemplate">
-  <ul id = "entreesList">
-    {{#entreesItem}}
-    <div>
-      <li>{{name}}</li>
-        <li>${{price}}</li>
-       <li>{{description}}</li>
-    </div>
-    {{/entreesItem}}
-  </ul>
+<script type = "x-tmpl-mustache" id = "entreeTemplate">
+  {{#entreeItem}}
+ <p>
+     <li>{{name}}</li>
+     <li>{{price}}</li>
+     <li>{{description}}</li>
+         {{#spicy}}
+       <li>spicy icon</li>
+         {{/spicy}}
+         {{^spicy}}
+       <li>spice upon request</li>
+         {{/spicy}}
+         {{#vegan}}
+       <li>Voted Best</li>
+         {{/vegan}}
+         {{#favorite}}
+       <li>Voted Best</li>
+         {{/favorite}}
+   {{/entreeItem}}
+   </p>
 </script>
 
+<script type = "x-tmpl-mustache" id = "specialTemplate">
+{{#specialItem}}
+ <p>Special {{menu_item_id}}: Two Entrees, Two Beers & a Game for $25.</p>
+{{/specialItem}}
+</script>
 
-
-
-
+<script type = "x-tmpl-mustache" id = "gamesTemplate">
+{{#gamesItem}}
+<p>
+<li>{{name}}</li>
+<li>{{price}}</li>
+<li>{{description}}</li>
+<li>{{rating}}</li>
+<li>{{platform}}</li>
+{{/gamesItem}}
+</p>
+</script>
 
 
 
