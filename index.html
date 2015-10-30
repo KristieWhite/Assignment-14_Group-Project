@@ -14,31 +14,27 @@
       <img src="http://mahoneysatlantic.com/wp-content/uploads/Mahoneys_SD_181-e1390358534738-1000x400.jpg" >
 
   <h1> Iron Pints </h1>
+  </div>
 
-  <div class="blackBar1"></div>
-
-  <ul id="socialLinks">
-
-  <li><a href="https://twitter.com/?lang=en" class="brandico-twitter-bird"> </a></li>
-
-  <li><a href="https://instagram.com/" class="brandico-instagram" > </a></li>
-
-  <li><a href="https://www.facebook.com/" class="brandico-facebook"> </a></li>
-
-  <li><a href="https://plus.google.com/getstarted/getstarted?fww=1" class="brandico-googleplus-rect"> </a></li>
-</ul>
+  <div class="blackBar1">
+    <ul>
+      <li> <a href = "#menu"> Menu </a></li>
+      <li> <a href = "#reservations">Reservations </a></li>
+      <li> <a href = "#map">Location </a></li>
+    </ul>
+  </div>
 
 
-</div>
 
 <div class = "firstContainer">
   <div id = "newsProducts"></div>
+  <div id = "theSpecials">
+    <p> This is where we are going to put stuff </p>
 
-  <iframe width="400" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJy6FEsprDyIARuQKsh8g7_B8&key=AIzaSyAFytpJMSTNookNXGWAGg8kSk7mDHSwKe8" allowfullscreen></iframe>
+  </div>
 
 </div>
 
-<div class="blackBar2"></div>
 
 <div class="menu">
     <h3>BEER</h3>
@@ -59,10 +55,32 @@
        </div>
 </div>
     <div id="filler"></div>
+<div class="blackBar2">
+   <ul id="socialLinks">
 
+  <li><a href="https://twitter.com/?lang=en" class="brandico-twitter-bird"> </a></li>
+
+  <li><a href="https://instagram.com/" class="brandico-instagram" > </a></li>
+
+  <li><a href="https://www.facebook.com/" class="brandico-facebook"> </a></li>
+
+  <li><a href="https://plus.google.com/getstarted/getstarted?fww=1" class="brandico-googleplus-rect"> </a></li>
+    </ul>
 </div>
 
 
+
+<div id = "bottomContainer">
+
+<div id = "reservations"> </div>
+
+<iframe id = "map" width="400" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJy6FEsprDyIARuQKsh8g7_B8&key=AIzaSyAFytpJMSTNookNXGWAGg8kSk7mDHSwKe8" allowfullscreen></iframe>
+
+
+
+</div>
+</div>
+</div>
 <script type="x-tmpl-mustache" id = "newsTemplate">
  <div>
    {{#newsItem}}
@@ -78,7 +96,7 @@
 <script type = "x-tmpl-mustache" id = "beerTemplate">
 {{#beerItem}}
  <p>
-     <li>{{name}}</li>
+     <li id = "beerName">{{name}}</li>
        <li>{{style}}</li>
        <li>{{description}}</li>
        <li>ABV:{{content}}</li>
@@ -102,8 +120,8 @@
 <script type = "x-tmpl-mustache" id = "entreeTemplate">
   {{#entreeItem}}
  <p>
-     <li>{{name}}</li>
-     <li>{{price}}</li>
+     <li id = "entreeName">{{name}}</li>
+     <li>${{price}}</li>
      <li>{{description}}</li>
          {{#spicy}}
        <li>spicy icon</li>
@@ -115,7 +133,7 @@
        <li>Voted Best</li>
          {{/vegan}}
          {{#favorite}}
-       <li>Voted Best</li>
+       <li>This entree is Voted Best</li>
          {{/favorite}}
    {{/entreeItem}}
    </p>
@@ -132,11 +150,11 @@
 <script type = "x-tmpl-mustache" id = "gamesTemplate">
 {{#gamesItem}}
 <p>
-<li>{{name}}</li>
-<li>{{price}}</li>
+<li id = "gameName">{{name}}</li>
+<li>${{price}}</li>
 <li>{{description}}</li>
-<li>{{rating}}</li>
-<li>{{platform}}</li>
+<li>Rated: {{rating}}</li>
+<li>Play it on: {{platform}}</li>
 {{/gamesItem}}
 </p>
 </script>
