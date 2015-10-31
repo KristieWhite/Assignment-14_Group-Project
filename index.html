@@ -108,6 +108,8 @@
 
   <li><a href="https://plus.google.com/getstarted/getstarted?fww=1" class="brandico-googleplus-rect"> </a></li>
     </ul>
+
+
 </div>
 
 
@@ -161,7 +163,15 @@
        </div>
 </form>
 </div>
-<div class="blackBar3"></div>
+<div class="blackBar3">
+  <span> &copy; 2015 KEND All Rights Reserved. </span>
+   <ul>
+      <li> <a href = "#home"> Home</a></li>
+      <li> <a href = "#menu"> Menu </a></li>
+      <li> <a href = "#reservations">Reservations </a></li>
+      <li> <a href = "#map">Location </a></li>
+    </ul>
+</div>
 </div>
 <script type="x-tmpl-mustache" id = "newsTemplate">
  <div>
@@ -189,11 +199,11 @@
        <li>On Draft</li>
            {{/draught}}
            {{#allergies}}
-       <li>Gluten Allergies</li>
+       <li class='maki-hospital'> Gluten allergy</li>
            {{/allergies}}
        <li>${{price}}</li>
            {{#favorite}}
-       <li>Voted Best</li>
+       <li class ="fontelico-emo-thumbsup"> Voted Best</li>
            {{/favorite}}
    {{/beerItem}}
  </p>
@@ -205,17 +215,20 @@
      <li id = "entreeName">{{name}}</li>
      <li>${{price}}</li>
      <li>{{description}}</li>
+        {{#allergies}}
+       <li class='maki-hospital'> Food allergy</li>
+        {{/allergies}}
          {{#spicy}}
-       <li>spicy icon</li>
+       <li class= 'maki-fire-station'> Hot</li>
          {{/spicy}}
          {{^spicy}}
-       <li>spice upon request</li>
+       <li class= 'maki-fire-station'> spice upon request</li>
          {{/spicy}}
          {{#vegan}}
-       <li>Voted Best</li>
+       <li></li>
          {{/vegan}}
          {{#favorite}}
-       <li>This entree is Voted Best</li>
+       <li class ="fontelico-emo-thumbsup"> Voted Best</li>
          {{/favorite}}
    {{/entreeItem}}
    </p>

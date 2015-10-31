@@ -33,6 +33,7 @@ $(document).ready(function(){
             name: obj.item,
             price: obj.price,
             description: obj.description,
+            allergies: obj.allergies,
             vegan: obj.vegan,
             spicy: obj.spicy,
             favorite: obj.favorite

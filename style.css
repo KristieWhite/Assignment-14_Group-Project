@@ -1,9 +1,22 @@
-@import url(http://weloveiconfonts.com/api/?family=brandico);
+@import url(http://weloveiconfonts.com/api/?family=brandico|fontelico|maki);
+
+/* maki */
+[class*="maki-"]:before {
+  font-family: 'maki', sans-serif;
+  color: white;
+  font-size: 20px;
+}
 [class*="brandico-"]:before {
   font-family: 'brandico', sans-serif;
   color: white;
   font-size: 30px;
 }
+[class*="fontelico-"]:before {
+  font-family: 'fontelico', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
 
 * {
   box-sizing: border-box;
@@ -60,6 +73,25 @@ h1 {
     height: 60px;
     position: relative;
     bottom: 1em;
+}
+
+.blackBar3 li {
+  position: relative;
+  bottom: .7em;
+  left: 9em;
+  font-size: 30px;
+  margin-left: 180px;
+  float: left;
+}
+
+.blackBar3 a {
+  color: white;
+}
+
+.blackBar3 span {
+  position: relative;
+  top: 1.5em;
+  left: .3em;
 }
 
 #container{
