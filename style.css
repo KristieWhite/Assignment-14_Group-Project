@@ -8,10 +8,18 @@
 * {
   box-sizing: border-box;
   list-style: none;
-text-decoration: none;}
+text-decoration: none;
+}
 
 h1 {
   font-family: 'Nunito', sans-serif, arial;
+}
+
+#logo {
+    position: absolute;
+    background-attachment: fixed;
+    animation-direction: alternate;
+    animation-duration: 4000ms;
 }
 
 #socialLinks  li {
@@ -19,16 +27,17 @@ h1 {
     margin: 0 2em 0 0;
 }
 
-.clearFloat [
+.clearFloat {
     clear: both;
     margin: 0;
     padding: 0;
-]
+}
 
 .blackBar1 {
     background-color: rgba(28, 27, 27, 0.63);
     color: white;
-    height: 60px;
+    height: 70px;
+    width: 100%;
 }
 
 .blackBar2 {
@@ -38,20 +47,18 @@ h1 {
     margin: 1em 0;
 }
 
-#container{
+#container {
   background-image: url("http://zamnar.com/data/uploads/20/330934-grey-background.jpg");
+    width: 100%;
 }
 
 .firstContainer {
-    display:;/*was inline block*/
     border: solid 1px black;
     width: 100%;
-    height: em;
     border-style: none;
     padding: 2em 0 0 5em;
     margin: 4em 0 0 0;
 }
-
 
 #newsProducts {
   display: inline-block;
@@ -61,8 +68,10 @@ h1 {
   overflow: auto;
   margin-top:;/*was 50px*/
   margin-left:;/*was 150px*/
-  background-color: white;
+    color: #121212;
+  background-color: rgb(227, 227, 227);
     padding: 1em;
+    box-shadow:;
 }
 
 #dailySpecials {
@@ -76,7 +85,7 @@ h1 {
   background-color: white;
     padding: 1em;
 }
-}
+
 
 iframe {
   display: inline-block;
@@ -87,8 +96,7 @@ iframe {
 
 
 .header {
-  height: 100%;/*was 200px*/
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
@@ -99,59 +107,66 @@ background-repeat: no-repeat;
   position: absolute;
   top: -50px;
   left: 400px;
-
-
 }
 
 .header img {
   height: 200px;
   width: 90%;
-  margin-left: 60px;
-  overflow: auto;
-  background-image: center;
-    background-size: contain;
-  position: ;
+    background-position: center;
+  margin: 0 0 0 4em;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.header ul{
+
+.header ul {
   position: absolute;
   top: 150px;
   right: 605px;
   list-style: none;
 }
 
-.header ul li{float: left;
-padding-left:15px;}
+.header ul li {
+    float: left;
+    padding-left:15px;
+}
 
 .menu {
    margin: 2em auto;/*was 2em 0 0 9em*/
    width: 90%;/*was 955px*/
     overflow: auto;
 }
+
 .menu h3 {
-   background: rgba(188, 44, 44, 0.63);
+   background: rgba(206, 90, 16, 0.73);
    color:#fff;
    cursor:pointer;
    margin:0 0 1px 0;
    padding: 20px 0;
     text-align: center;
 }
+
 .menu h3.current {
-   background:rgba(208, 90, 90, 0.63) ;
-   cursor:default;
+   background: rgba(208, 90, 90, 0.63);
+   cursor: default;
 }
+
 .menu div.dropDown {
-   padding:5px 10px;
+   padding: 5px 10px;
    max-height: auto;
 }
 
-#filler {
-    height: 400px;
-    width: 100%;
+#beerPhotos {
+}
+
+.roundPic img {
+   border-radius: 100%;
+    overflow: hidden;
 }
 
 #beerProducts {
     color: #e8e8e8;
 }
+
 #beerNames {}
 
 #entreeProducts {
@@ -164,4 +179,18 @@ padding-left:15px;}
 
 #specialProducts {
     color: #e8e8e8;
+}
+
+#iFrame {
+    border-radius: ;
+    overflow: ;
+    max-width: 100%
+    max-height: 100%;
+    margin: auto;
+    display: block;
+}
+   
+#iframeDiv {
+     height: 400px;
+    width: 250px;
 }
