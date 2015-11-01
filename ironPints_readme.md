@@ -2,7 +2,7 @@ This is our group project as students at The Iron Yard. We are on our 4th week o
 
 Here are the members of this project and links to our GitHub profiles.
 
-Domingo DeRosa - https://github.com/domingo91
+Domingo Rosa - https://github.com/domingo91
 Elijah Prince - https://github.com/Blackprince1312
 Kristie White - https://github.com/KristieWhite
 Nick Reynolds - https://github.com/Reynoldsn
