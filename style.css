@@ -365,3 +365,6 @@ textarea{
   position: relative;
   bottom: 40px;
 }
+
+@media (max-width: 1024px) {
+  min-width: 500px; }
