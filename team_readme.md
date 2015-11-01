@@ -18,9 +18,10 @@ The following students participated in this project.
 This project is fictional. There is no real client. Any similarity is purely a coincidence.
 
 
-## Other Resources
+## Other Resources that we used
 
 The Iron Pints logo (https://dribbble.com/shots/1619601-Iron-Pints)
 Google Fonts (https://www.google.com/fonts)
 http://www.weloveiconfonts.com/
 http://www.colourlovers.com/
+http://www.zamnar.com/
