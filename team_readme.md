@@ -7,6 +7,8 @@ The following students participated in this project.
 * Nick Reynolds - https://github.com/Reynoldsn
 * Domingo Rosa - http://github.com/domingo91
 
+The site is published on iron_pints.surge.sh
+
 ## We used three API's to create this site
 
 1. Flickr's Creative Commons (https://www.flickr.com/creativecommons/)
